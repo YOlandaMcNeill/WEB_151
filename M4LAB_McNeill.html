@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Canvas</title>
+</head>
+
+<body>	
+	<canvas id= "canvas" width="600" height="600"></canvas>
+	
+	<script>
+	
+	var canvas = document.getElementById("canvas");
+	var ctx = canvas.getContext("2d");
+	
+	var circle = function (x, y, radius) {
+		ctx.beginPath();
+		ctx.arc(x, y, radius, 0, Math.PI * 2, false);
+		ctx.stroke();
+	};
+	
+	ctx.lineWidth = 4;
+	
+	ctx.strokeStyle = "Black";
+	circle(200, 100, 30);
+	
+	ctx.strokeStyle = "Black";
+	circle(200, 170, 40);
+	
+	ctx.fillStyle = "Black";
+	circle(200, 150, 2.5);
+	ctx.fill();
+	
+	ctx.fillStyle = "Black";
+	circle(200, 170, 2.5);
+	ctx.fill();
+	
+	ctx.fillStyle = "Black";
+	circle(200, 190, 2.5);
+	ctx.fill();
+	
+	ctx.fillStyle = "Orange";
+	circle(200, 105, 2.5);
+	ctx.fill();
+	
+	ctx.fillStyle = "Black";
+	circle(190, 95, 2.5);
+	ctx.fill();
+	
+	ctx.fillStyle = "Black";
+	circle(210, 95, 2.5);
+	ctx.fill();	
+	
+	</script>
+</body>
+</html>

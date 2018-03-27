@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Canvas</title>
+</head>
+
+<body>	
+	<canvas id= "canvas" width="600" height="600"></canvas>
+	
+	<script>
+	var cavas = document.getElementById("canvas");
+	var ctx = canvas.getContext("2d");
+	ctx.fillStyle = "DodgerBlue";
+	ctx.fillRect(0, 0, 50, 100);
+	ctx.fillStyle = "DeepSkyBlue";
+	ctx.fillRect(25, 0, 50, 100);
+	ctx.fillStyle = "DarkTurquoise";
+	ctx.fillRect(50, 0, 50, 100);
+	
+	ctx.fillStyle = "MediumPurple";
+	ctx.fillRect(0, 150, 50, 100);
+	ctx.fillStyle = "MediumOrchid";
+	ctx.fillRect(25, 150, 50, 100);
+	ctx.fillStyle = "Magenta";
+	ctx.fillRect(50, 150, 50, 100);
+	
+	ctx.fillStyle = "Crimson";
+	ctx.fillRect(0, 300, 50, 100);
+	ctx.fillStyle = "FireBrick";
+	ctx.fillRect(25, 300, 50, 100);
+	ctx.fillStyle = "DarkRed";
+	ctx.fillRect(50, 300, 50, 100);
+	
+	</script>
+</body>
+</html>
